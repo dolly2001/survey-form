@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" >
+    <title>A Simple Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">Survey Form</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempora at, ducimus repellendus similique asperiores modi optio quos non pariatur.</p>
+
+        <form action="">
+
+            <div class="divanter">
+                <label for="name" id="label-name">Name</label>
+                <input type="text" id="name" required placeholder="Name">
+            </div>
+    
+            <div class="divanter">
+                <label for="email" id="label-email">Email</label>
+                <input type="email" id="email" required placeholder="Email">
+            </div>
+
+            <div class="divanter">
+                <label for="phone" id="label-phone">Contact No</label>
+                <input type="number" id="phone" required min="0123456789" placeholder="Your Contact">
+            </div>
+
+            <div class="divanter">
+                <label for="way">What Describe's you best ?</label>
+                <select name="role" id="way">
+                    <option value selected disabled></option>
+                    <option value="student">Student</option>
+                    <option value="front-end">Front-End developer</option>
+                    <option value="back-end">Back-End Engineer</option>
+                    <option value="full-stack">Full Stack developer</option>
+                    <option value="network-engineer">Network Engineer</option>
+                    <option value="devops">DevOps</option>
+                    <option value="cloud">Cloud Engineer</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+
+            <div class="divanter">
+                <label for="gender">Gender</label>
+                <label>
+                    <input type="radio" name="Gender" value="male" checked> Male
+                </label>
+                <label>
+                    <input type="radio" name="Gender" value="female" > Female
+                </label>
+                <label>
+                    <input type="radio" name="Gender" value="other" > Others
+                </label>
+            </div>
+
+            <div class="divanter">
+                <label>Tell me something about yourself</label>
+                <textarea name="" id="yourself" cols="30" rows="4"></textarea>
+            </div>
+
+            <div class="divanter">
+                <label>I am</label>
+                <label>
+                    <input type="radio" name="exp" checked > Fresher 
+                </label>
+                <label>
+                    <input type="radio" name="exp"> Moderate Experience 
+                </label>
+                <label>
+                    <input type="radio" name="exp">  Experienced 
+                </label>
+            </div>
+
+            <div class="divanter">
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>
+
+
